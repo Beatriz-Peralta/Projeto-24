@@ -28,19 +28,13 @@ function setup() {
  
   
   var ball_options = {
-      /*ESCOLHA UM DOS CÓDIGOS DE RESTITUTION/ELASTICIDADE E RETIRE O "//" DELE. A BOLA PRECISA TER UM VALOR MAIOR QUE DA PEDRA */
-    // restitution: 0.2,
-    // restitution: 1,
-    // restitution: -0.8,
-    // restitution: 0.75,
+      // A BOLA PRECISA TER UM VALOR MAIOR QUE DA PEDRA 
+     restitution: 0.75;
   }
 
   var rock_options = {
-       /*ESCOLHA UM DOS CÓDIGOS DE RESTITUTION/ELASTICIDADE E RETIRE O "//" DELE. A PEDRA PRECISA TER UM VALOR MENOR QUE DA BOLA */
-    // restitution: 0.2,
-    // restitution: 1,
-    // restitution: -0.8,
-    // restitution: 0.75,
+        //A PEDRA PRECISA TER UM VALOR MENOR QUE DA BOLA 
+     restitution: 0.2;
 
   }
    
@@ -83,11 +77,5 @@ function vForce()
 {
   /*ESCOLHA UM DOS CÓDIGOS DE MATTER PARA QUE A BOLA VÁ PARA CIMA E RETIRE O "//" DELE */
 
-  // Matter.Body.applyForce(ball,{x:0,y:0},{x:0,y:-0.05});
-
-  // Matter.Body.applyForce(ball,{x:0,y:0},{x:0,y:0});
-
-  // Matter.Body.applyForce(ball,{x:0,y:0},{x:0.5,y:0});
-
-  // Matter.Body.applyForce(ball,{x:0,y:0},{x:0,y:0.05});
+ Matter.Body.applyForce(ball,{x:0,y:0},{x:0,y:0.05});
 }
