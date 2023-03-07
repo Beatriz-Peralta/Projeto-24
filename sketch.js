@@ -29,12 +29,12 @@ function setup() {
   
   var ball_options = {
       // A BOLA PRECISA TER UM VALOR MAIOR QUE DA PEDRA 
-     restitution: 0.75;
+     restitution: 0.75
   }
 
   var rock_options = {
         //A PEDRA PRECISA TER UM VALOR MENOR QUE DA BOLA 
-     restitution: 0.2;
+     restitution: 0.2
 
   }
    
